@@ -9,7 +9,6 @@ Personal portfolio for Terry Chu, highlighting experience in cloud infrastructur
 - `index.html` — Homepage, selected career experience, technical skills, and contact links.
 - `about.html` — Professional background and areas of experience.
 - `css/portfolio.css` — Styles for the current portfolio pages.
-- `archive/` — Older experience pages retained for reference; they are not part of the main site navigation.
 
 The site is built with static HTML and CSS. There is no build step or package installation required.
 
