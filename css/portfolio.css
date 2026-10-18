@@ -316,8 +316,8 @@ a:focus {
 
 .education-logo {
     display: block;
-    width: 52px;
-    height: 52px;
+    width: 60px;
+    height: 60px;
     flex: 0 0 auto;
     border-radius: 50%;
     object-fit: contain;
