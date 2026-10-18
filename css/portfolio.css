@@ -1,0 +1,355 @@
+:root {
+    color-scheme: light;
+    --ink: #17242b;
+    --muted: #596970;
+    --paper: #f5f4ef;
+    --white: #fff;
+    --accent: #c65d3a;
+    --accent-dark: #984126;
+    --line: #d9dedb;
+    --night: #172b32;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+a {
+    color: var(--accent-dark);
+    text-underline-offset: 0.2em;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent);
+}
+
+.site-header {
+    position: relative;
+    z-index: 1;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: min(1120px, calc(100% - 3rem));
+    min-height: 76px;
+    margin: 0 auto;
+}
+
+.brand {
+    color: var(--ink);
+    font-size: 1.1rem;
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--ink);
+}
+
+.hero {
+    overflow: hidden;
+    padding: clamp(5rem, 12vw, 9rem) 0;
+    background:
+        radial-gradient(ellipse at 78% 12%, rgba(198, 93, 58, 0.28), transparent 32%),
+        var(--night);
+    color: var(--white);
+}
+
+.hero-inner,
+.content,
+.footer-inner {
+    width: min(1000px, calc(100% - 3rem));
+    margin: 0 auto;
+}
+
+.eyebrow {
+    margin: 0 0 1.25rem;
+    color: #f0aa8f;
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 6.6rem);
+    font-weight: 720;
+    letter-spacing: -0.075em;
+    line-height: 0.98;
+}
+
+.hero-copy {
+    max-width: 670px;
+    margin: 1.75rem 0 0;
+    color: #d4dddc;
+    font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.4rem;
+    margin-top: 2.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.15rem;
+    border: 1px solid #edaa90;
+    border-radius: 3px;
+    background: #edaa90;
+    color: var(--night);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    border-color: var(--white);
+    background: var(--white);
+    color: var(--night);
+}
+
+.hero-link {
+    color: var(--white);
+    font-weight: 650;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: #f0aa8f;
+}
+
+.section {
+    padding: clamp(4rem, 8vw, 6.5rem) 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.section-heading {
+    max-width: 690px;
+    margin-bottom: 2.5rem;
+}
+
+.section-kicker {
+    margin: 0 0 0.65rem;
+    color: var(--accent-dark);
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 1.12;
+}
+
+.section-intro {
+    max-width: 680px;
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+}
+
+.experience-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.7fr) 2fr;
+    gap: 2rem;
+    padding: 1.75rem;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.58);
+}
+
+.experience-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.experience-meta strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--ink);
+    font-size: 1.25rem;
+}
+
+.experience-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.15rem;
+}
+
+.experience-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.experience-highlights {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0.7rem 0 0;
+    padding-left: 1.15rem;
+    color: var(--muted);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.7rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 3rem;
+}
+
+.about-grid p {
+    margin-top: 0;
+    color: var(--muted);
+}
+
+.education {
+    padding-left: 1.4rem;
+    border-left: 2px solid var(--accent);
+}
+
+.education strong,
+.education span {
+    display: block;
+}
+
+.education span {
+    margin-top: 0.2rem;
+    color: var(--muted);
+}
+
+.contact-section {
+    background: #e9ece7;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.contact-row p {
+    max-width: 570px;
+    margin: 1rem 0 0;
+    color: var(--muted);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-weight: 650;
+}
+
+.site-footer {
+    padding: 1.6rem 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (max-width: 700px) {
+    .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 0.4rem 1.2rem;
+    }
+
+    .experience-card,
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .experience-card {
+        padding: 1.3rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

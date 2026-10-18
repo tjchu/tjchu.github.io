@@ -1,122 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>About</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta name="description" content="Learn about Terry Chu's Senior DevOps engineering experience across cloud infrastructure, CI/CD, and reliability.">
+    <meta name="author" content="Terry Chu">
+    <title>About Terry Chu | Senior DevOps Engineer</title>
+    <link href="css/portfolio.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Home</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#">About</a></li> 
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="proj1.html">DIRECTV</a></li>
-          <li><a href="proj2.html">Intuit</a></li>
-          <li><a href="proj3.html">UCSD</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>About</h1>
-                <h2>Passion. Experience. Background.</h2>
-            </div>
-        </div>
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html">Terry Chu</a>
+            <ul class="nav-links">
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/terry-chu-535758a9" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
+    <main id="about">
+        <section class="hero" aria-labelledby="about-title">
+            <div class="hero-inner">
+                <p class="eyebrow">About</p>
+                <h1 id="about-title">Senior DevOps Engineer.</h1>
+                <p class="hero-copy">I build cloud platforms and delivery systems that make software releases more reliable and efficient.</p>
+            </div>
+        </section>
 
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="about1.jpg" width = 500px height = 500px>
-            <h2 class="featurette-heading">Passion
-                <span class="text-muted">for Engineering</span>
-            </h2>
-            <p class="lead">My passion for programming was sparked when I took a computer science class in high school because I was amazed with how everything works and how much potential it has to make the world a better place by creating new technologies. Craving for career opportunities in the engineering field, I thus decided to major in Computer Science at UCSD to pursue my passion as a software engineer. </p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="about2.png" width = 500px height = 500px>
-            <h2 class="featurette-heading">Abundant
-                <span class="text-muted">Experiences</span>
-            </h2>
-            <p class="lead">I have over 5 years of experience learning computer science in both high school and college. I graudated from UC San Diego and acquired numerous programming skills to improve myself as a prospect engineering employee, learning entrepreneurial skills, and gaining professional experiences. Feel free to see my <a href="https://www.linkedin.com/in/terry-chu-535758a9">LinkedIn</a> profile to view my professional experience.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="about3.jpg" width = 500px height = 500px>
-            <h2 class="featurette-heading">Multicultural and Unique
-                <span class="text-muted">Background</span>
-            </h2>
-            <p class="lead"> I was born in Los Angeles in the year of 1993 where I spent part of my childhood and then I moved to Taiwan and attended a private American high school. I can speak both English and Mandarin Chinese fluently, and have 5 years of Japanese learning in both high school and college under my belt. After the international school experience, I went on to attend UCSD to explore the world and learn more.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+        <section class="section">
+            <div class="content about-grid">
+                <div>
+                    <p class="section-kicker">My approach</p>
+                    <h2>Make the path to production smoother.</h2>
+                    <p>Across Akido Labs, CoStar Group, Tinder, Gamblit Gaming, GoSecure, and Intuit, I’ve worked on cloud infrastructure, infrastructure as code, CI/CD, Kubernetes, and monitoring. My focus is on practical improvements—faster releases, fewer manual steps, and more reliable services.</p>
+                    <p>I earned a B.S. in Computer Science from the University of California, San Diego. My toolkit includes AWS, Kubernetes, Terraform, Helm, ArgoCD, Jenkins, Python, and observability platforms including Prometheus, Grafana, Datadog, and CloudWatch.</p>
+                </div>
+                <div class="education">
+                    <p class="section-kicker">Areas of experience</p>
+                    <strong>Cloud and infrastructure</strong>
+                    <span>AWS · Kubernetes · Terraform · Docker</span>
+                    <strong>Delivery and automation</strong>
+                    <span>CI/CD · Helm · ArgoCD · Jenkins · Azure DevOps</span>
+                    <strong>Observability</strong>
+                    <span>Prometheus · Grafana · Datadog · CloudWatch</span>
                 </div>
             </div>
-        </footer>
+        </section>
 
-    </div>
-    <!-- /.container -->
+        <section class="section contact-section">
+            <div class="content contact-row">
+                <div>
+                    <p class="section-kicker">Continue the conversation</p>
+                    <h2>See my latest profile.</h2>
+                    <p>For up-to-date professional experience and education details, visit LinkedIn.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="index.html">Home</a>
+                    <a href="https://www.linkedin.com/in/terry-chu-535758a9" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="mailto:terrychu2002@gmail.com">Email Terry</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>© 2026 Terry Chu</span>
+            <a href="#about">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
-
 </html>
